@@ -19,12 +19,19 @@ main {
 
 /*Contenedor del footer*/
 footer {
+    margin: 50px 50px 50px 50px;
     background-color: rgba(215, 201, 237, 0.7);
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    padding: 15px 30px;
-    min-height: 50vh;
+    flex-direction: column;
+    padding: 30px 50px 15px 50px;
+    border-radius: 5px;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 /*Caja del menú de navegacion */
@@ -50,4 +57,14 @@ body {
 .imagen-carrusel {
     height: 500px;
     object-fit: cover;
+}
+
+/*Icono de redes para que se acople */
+.iconoredes {
+    width: 35px; 
+    height: 35px; 
+    margin: 0 10px; 
+    object-fit: contain; 
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.3));
 }
