@@ -1,1 +1,37 @@
-/*proximamente/*
+/*Contenedor de la barra superior */
+.navbar {
+    background-color: rgba(215, 201, 237, 0.7);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 15px 30px; 
+}
+
+/*Contenedor del main*/
+main {
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: center; 
+    justify-content: center;
+    padding: 30px 30px;
+}
+
+/*Caja del menú de navegacion */
+.navbar nav ul {
+    display: flex;
+    list-style: none; 
+    margin: 5px;
+    padding: 5px;
+    gap: 20px; 
+}
+
+/*Fondo de la pagina */
+body {
+    margin : 0;
+    background-image: url('../img/paisaje.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
