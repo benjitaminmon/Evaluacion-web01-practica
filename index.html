@@ -13,7 +13,10 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <h1 class="navbar-brand mb-0 h1">Destino Cordillera</h1>
+                <h1 class="navbar-brand mb-0 h1 d-flex align-items-center marca-personalizada">
+                    <img src="img/icon/placeholder.png" alt="Logo Destino Cordillera" class="logo-nav me-2">
+                    Destino Cordillera
+                </h1>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                     <span class="navbar-toggler-icon"></span>
@@ -25,15 +28,18 @@
                             <a class="nav-link" href="index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pagina1.html">PAGINA 1</a>
+                            <a class="nav-link" href="pagina1.html">GASTRONOMÍA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pagina2.html">PAGINA 2</a>
+                            <a class="nav-link" href="pagina2.html">ALOJAMIENTO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pagina3.html">PAGINA 3</a>
                         </li>
                     </ul>
+                </div>
+                <div class="ms-auto">
+                    <img src="img/icon/icon.png" alt="Usuario" class="logo-usuario">
                 </div>
             </div>
         </nav>
@@ -43,7 +49,10 @@
     <main>
         <h2 style="text-align: center;">Bienvenidos a Destino Cordillera</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ultricies nisl, vel fringilla mauris. Ut sodales nunc non erat porttitor volutpat. Aliquam ut tempor nunc, at aliquet metus. Maecenas venenatis, risus sed tincidunt egestas, odio lectus dapibus nisi, nec gravida diam felis faucibus quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Donec nisi nisl, lobortis sed nunc nec, auctor fringilla odio. Praesent imperdiet nulla in risus tincidunt tincidunt. Nullam quis felis non orci elementum condimentum quis ut diam. Duis mi eros, pellentesque vel facilisis sit amet, aliquam in arcu. Cras in leo et leo pulvinar iaculis ac in nunc. Quisque dapibus arcu vitae sapien cursus, id pharetra massa commodo.</p>
-
+        <p></p>
+        <h3 class="fw-bold mb-4">
+            Conoce sobre nuestras actividades
+        </h3>
         <!-- Carrusel de actividades -->
         <section class="container-fluid p-0 mt-5">
             <div id="carruselCordillera" class="carousel slide" data-bs-ride="carousel">
@@ -90,8 +99,37 @@
                 </button>
             </div>
         </section>
-
+        <p></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ultricies nisl, vel fringilla mauris. Ut sodales nunc non erat porttitor volutpat. Aliquam ut tempor nunc, at aliquet metus. Maecenas venenatis, risus sed tincidunt egestas, odio lectus dapibus nisi, nec gravida diam felis faucibus quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Donec nisi nisl, lobortis sed nunc nec, auctor fringilla odio. Praesent imperdiet nulla in risus tincidunt tincidunt. Nullam quis felis non orci elementum condimentum quis ut diam. Duis mi eros, pellentesque vel facilisis sit amet, aliquam in arcu. Cras in leo et leo pulvinar iaculis ac in nunc. Quisque dapibus arcu vitae sapien cursus, id pharetra massa commodo.</p>
+        <p></p>
+
+        <!-- Sección de gastronomia y alojamiento en tarjetas -->
+        <div class="row mt-5">
+            <!-- Gastronomía  -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100 border-0">
+                    <img src="img/cazuela.jpg" class="card-img-top rounded" alt="Gastronomía" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h4 class="card-title fw-bold">Nuestra Gastronomía</h4>
+                        <p class="card-text">Disfruta de los sabores típicos de la zona.</p>
+                        <a href="pagina1.html" class="btn btn-dark mt-auto w-50 mx-auto">Ver Gastronomía</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alojamiento -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100 border-0">
+                    <img src="img/alojamiento.jpg" class="card-img-top rounded" alt="Alojamiento" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h4 class="card-title fw-bold">Alojamiento</h4>
+                        <p class="card-text">Descansa en nuestras cómodas instalaciones.</p>
+                        <a href="pagina2.html" class="btn btn-dark mt-auto w-50 mx-auto">Ver Alojamiento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
     <!-- Pie de página -->

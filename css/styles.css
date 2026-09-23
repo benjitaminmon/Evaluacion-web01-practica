@@ -11,7 +11,7 @@
 
 /*Contenedor del main*/
 main {
-    margin: 90px 50px 50px 50px;
+    margin: 110px 50px 50px 50px;
     background-color: rgba(255, 255, 255, 0.9);
     align-items: center; 
     justify-content: center;
@@ -69,6 +69,21 @@ body {
     object-fit: contain; 
     cursor: pointer;
     filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.3));
+}
+
+/*Logo Destino Cordillera ajustar*/
+.logo-nav {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/*Logo usuario ajustar*/
+.logo-usuario {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 /*Centrado de botones principales*/
