@@ -11,7 +11,7 @@
 
     <!--Barra de navegación-->
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <h1 class="navbar-brand mb-0 h1">Destino Cordillera</h1>
                 
@@ -43,6 +43,53 @@
     <main>
         <h2 style="text-align: center;">Bienvenidos a Destino Cordillera</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ultricies nisl, vel fringilla mauris. Ut sodales nunc non erat porttitor volutpat. Aliquam ut tempor nunc, at aliquet metus. Maecenas venenatis, risus sed tincidunt egestas, odio lectus dapibus nisi, nec gravida diam felis faucibus quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Donec nisi nisl, lobortis sed nunc nec, auctor fringilla odio. Praesent imperdiet nulla in risus tincidunt tincidunt. Nullam quis felis non orci elementum condimentum quis ut diam. Duis mi eros, pellentesque vel facilisis sit amet, aliquam in arcu. Cras in leo et leo pulvinar iaculis ac in nunc. Quisque dapibus arcu vitae sapien cursus, id pharetra massa commodo.</p>
+
+        <!-- Carrusel de actividades -->
+        <section class="container-fluid p-0 mt-5">
+            <div id="carruselCordillera" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselCordillera" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carruselCordillera" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carruselCordillera" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- Trekking -->
+                    <div class="carousel-item active">
+                        <img src="img/trekking.jpg" class="d-block w-100 imagen-carrusel" alt="Trekking en la montaña">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Trekking por los senderos</h5>
+                            <p>Recorre nuestros senderos rodeados de bosque nativo y disfruta de una vista panorámica de los valles.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Termas -->
+                    <div class="carousel-item">
+                        <img src="img/termales.jpg" class="d-block w-100 imagen-carrusel" alt="Relajo en Termas">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Relajo en las Termas Volcánicas</h5>
+                            <p>Sumérgete en aguas termales naturales ubicadas al aire libre en la cordillera.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Bicicleta -->
+                    <div class="carousel-item">
+                        <img src="img/mountain_bike.jpg" class="d-block w-100 imagen-carrusel" alt="Mountain Bike">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Aventura en Mountain Bike</h5>
+                            <p>Desciende por nuestras rutas diseñadas para todos los niveles de experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselCordillera" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselCordillera" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
     </main>
 
     <!-- Pie de página -->
