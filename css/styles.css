@@ -95,15 +95,15 @@ body {
     }
 }
 
-/* EL MOLDE PERFECTO PARA TUS CARRUSELES */
+/*Ajuste para las fotos del carrusel*/
 .img-carrusel-fixed-height {
-    height: 450px !important; /* Definimos una altura FIJA para todas las fotos */
-    width: 100% !important; /* Que ocupen todo el ancho disponible */
-    object-fit: cover !important; /* Esta es la magia: recorta la foto proporcionalmente sin deformarla */
-    object-position: center !important; /* Asegura que el centro de la foto sea el foco */
+    height: 700px !important; 
+    width: 100% !important; 
+    object-fit: cover !important; 
+    object-position: center !important; 
 }
 
-/* Ajuste opcional para las imágenes de las tarjetas de arriba */
+/* Ajuste para las fotos de alojamiento*/
 .img-tarjeta {
     height: 250px; 
     width: 100%;
