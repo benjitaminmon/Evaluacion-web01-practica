@@ -1,3 +1,15 @@
+/*Configuraciones generales */
+body {
+    margin: 0; /* Elimina bordes blancos */
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333333;
+}
+/*Peso y color para los titulos*/
+h1, h2, h3{
+    font-weight: 700;
+    color: #1a202c;
+}
+
 /*Contenedor de la barra superior */
 .navbar {
     margin: 10px 10px 10px 10px;
@@ -71,14 +83,14 @@ body {
     filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.3));
 }
 
-/*Logo Destino Cordillera ajustar*/
+/*Logo Destino Cordillera ajustar */
 .logo-nav {
     width: 35px;
     height: 35px;
     object-fit: contain;
 }
 
-/*Logo usuario ajustar*/
+/*Logo usuario ajustar */
 .logo-usuario {
     width: 20px;
     height: 20px;
@@ -86,7 +98,7 @@ body {
     cursor: pointer;
 }
 
-/*Centrado de botones principales*/
+/*Centrado de botones principales */
 @media (min-width: 992px) {
     .centrar-absoluto {
         position: absolute;
@@ -95,7 +107,7 @@ body {
     }
 }
 
-/*Ajuste para las fotos del carrusel*/
+/*Ajuste para las fotos del carrusel */
 .img-carrusel-fixed-height {
     height: 700px !important; 
     width: 100% !important; 
@@ -103,15 +115,140 @@ body {
     object-position: center !important; 
 }
 
-/* Ajuste para las fotos de alojamiento*/
+/*Ajuste para las fotos de alojamiento */
 .img-tarjeta {
     height: 250px; 
     width: 100%;
     object-fit: cover;
 }
 
+/*Sección Gastronomía (Página full CSS) */
+/*Barra de navegación sin Bootstrap */
+.nav-gastronomia-header {
+    background-color: rgba(248, 249, 250, 0.85); /*Busque el color más parecido a las otras páginas */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-/* Efecto zoom interno para tarjetas */
+.nav-gastronomia-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: relative; /*Centra el menú */
+}
+
+.nav-gastronomia-logo {
+    color: #212529; 
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+}
+
+.nav-gastronomia-usuario {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+/*Tamaño de los iconos */
+.nav-icono {
+    height: 28px;
+    width: auto;
+}
+
+/*Menú centrado */
+.nav-gastronomia-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); /*Lo ajusta para que el centro del menú coincida con el centro de la pantalla */
+}
+
+.nav-gastronomia-menu li a {
+    color: #555555;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-gastronomia-menu li a:hover, 
+.nav-gastronomia-menu li a.activo {
+    color: #000000; 
+}
+
+/* Carrusel sin Bootstrap */
+.carrusel-custom-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9; /*Mantiene una proporción rectangular perfecta sin importar el ancho */
+    overflow: hidden !important;
+    border-radius: 8px 8px 0 0;
+}
+
+.carrusel-custom-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carrusel-custom-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carrusel-custom-track img {
+    flex: 0 0 100%;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover !important; 
+    object-position: center !important; /*Fuerza a que el recorte sea exactamente en el medio de la foto */
+    scroll-snap-align: center;
+}
+
+/*Botones del carrusel */
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.carrusel-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.carrusel-btn.prev { left: 10px; }
+.carrusel-btn.next { right: 10px; }
+
+/*Efecto zoom interno para tarjetas */
 .img-zoom {
     transition: transform 0.3s ease;
 }
