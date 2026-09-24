@@ -94,3 +94,18 @@ body {
         transform: translateX(-50%);
     }
 }
+
+/*Ajuste para las fotos del carrusel*/
+.img-carrusel-fixed-height {
+    height: 700px !important; 
+    width: 100% !important; 
+    object-fit: cover !important; 
+    object-position: center !important; 
+}
+
+/* Ajuste para las fotos de alojamiento*/
+.img-tarjeta {
+    height: 250px; 
+    width: 100%;
+    object-fit: cover;
+}
