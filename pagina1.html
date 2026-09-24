@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+    <title>Destino Cordillera - Gastronomía </title>
+    <link rel="stylesheet" href="css/styles.css"></head>
+<body class="body-custom">
+
+    <!-- Barra de navegación -->
+    <header class="nav-gastronomia-header">
+        <nav class="nav-gastronomia-container">
+                <a href="index.html" class="nav-gastronomia-logo">
+                <img src="img/icon/placeholder.png" class="nav-icono"> Destino Cordillera 
+            </a>
+            
+            <ul class="nav-gastronomia-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Panoramas</a></li>
+                <li><a href="pagina2.html">Alojamiento</a></li>
+                <li><a href="pagina3.html">Reserva y Contacto</a></li>
+            </ul>
+
+            <a href="#" class="nav-gastronomia-usuario">
+                <img src="img/icon/icon.png" alt="Icono user" class="nav-icono">
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-custom">
+        <h1 class="titulo-custom">Nuestra Gastronomía</h1>
+        <p class="subtitulo-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur tempus aliquam. Nullam eu ullamcorper nibh. Ut quis fermentum eros. Nulla facilisi. Suspendisse fringilla turpis ullamcorper augue iaculis imperdiet. Nulla maximus fermentum ex tristique suscipit. Aliquam fermentum lorem ac massa accumsan, eget consectetur urna porta. Donec nec dolor erat. In sed eros consectetur, sodales ipsum eleifend, feugiat magna. Sed finibus maximus ante. Nullam interdum varius imperdiet. Nulla vel ligula tristique, scelerisque orci sed, cursus tortor. Vestibulum auctor elit et nisl lobortis vehicula. Ut nec justo tincidunt, placerat eros vitae, euismod lorem.</p>
+        <p class="subtitulo-custom">Nunc nunc lorem, sollicitudin sed blandit non, consequat et metus. Aenean mauris magna, auctor ac commodo at, sodales sit amet ligula. In id sem nec urna fermentum convallis a eget purus. Proin euismod mi at erat laoreet porttitor. Mauris congue, sem vitae scelerisque tempus, velit ligula dapibus orci, nec interdum augue nulla quis quam. Nam non euismod nisl. Nulla bibendum mollis nunc, ut tristique felis accumsan ut. Pellentesque at aliquam purus. Etiam feugiat ex eros, vitae ullamcorper sapien auctor sit amet.</p>
+            
+    <!-- Restaurante -->
+    <article class="tarjeta-custom">
+        <!-- Contenedor del Carrusel Custom -->
+        <div class="tarjeta-body-custom">
+            <h2>Restaurante Lago Grey</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum felis arcu, non blandit arcu mattis quis. Sed ornare a leo quis commodo. Duis placerat vehicula arcu, vitae congue ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis leo ex, fermentum ut enim at, placerat pellentesque odio. Suspendisse elementum scelerisque aliquet. Nam sed augue fermentum, tincidunt erat non, pharetra nisl. Pellentesque ut eleifend libero, ac.</p>
+        </div>
+        <div class="carrusel-custom-container">
+            <button class="carrusel-btn prev" onclick="moverCarrusel(this, -1)">&#10094;</button>
+            <div class="carrusel-custom-track">
+                <img src="img/restaurantehotel1.jpg" alt="Restaurante foto 1">
+                <img src="img/comida1.jpg" alt="Restaurante foto 2">
+                <img src="img/comida2.jpg" alt="Restaurante foto 3">
+                <img src="img/comida3.jpg" alt="Restaurante foto 4">
+                <img src="img/comida4.jpg" alt="Restaurante foto 5">
+                <img src="img/comida5.jpg" alt="Restaurante foto 6">
+            </div>
+            <button class="carrusel-btn next" onclick="moverCarrusel(this, 1)">&#10095;</button>
+        </div>
+    </article>
+
+    <!-- Minimarket camping-->
+    <article class="tarjeta-custom">
+        <!-- Contenedor del Carrusel Custom -->
+        <div class="tarjeta-body-custom">
+            <h2>Minimarket Los Perros</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra sem sit amet suscipit finibus. Sed gravida ex tellus, a pulvinar arcu tincidunt nec. Suspendisse id sollicitudin ante. Donec porttitor nibh luctus, vehicula arcu in, sagittis est. Etiam sodales cursus ligula, eu sagittis arcu commodo at. Vestibulum eu eros lorem.</p>
+        </div>
+        <div class="carrusel-custom-container">
+            <button class="carrusel-btn prev" onclick="moverCarrusel(this, -1)">&#10094;</button>
+            <div class="carrusel-custom-track">
+                <img src="img/minimarket1.jpg" alt="Minimarket foto 1">
+                <img src="img/minimarket2.jpg" alt="Minimarket foto 2">
+                <img src="img/minimarket3.jpg" alt="Minimarket foto 3">
+            </div>
+            <button class="carrusel-btn next" onclick="moverCarrusel(this, 1)">&#10095;</button>
+        </div>
+    </article>
+            </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-custom">
+        <p>&copy; 2026 Destino Cordillera. Todos los derechos reservados.</p>
+    </footer>
+
+<!-- Script para los carruseles -->
+    <script>
+        function moverCarrusel(boton, direccion) {
+            // Encuentra el riel de imágenes asociado a este botón específico
+            const track = boton.parentElement.querySelector('.carrusel-custom-track');
+            // Calcula cuánto debe desplazarse (el ancho de una foto)
+            const anchoDesplazamiento = track.clientWidth;
+            // Mueve el scroll horizontalmente
+            track.scrollBy({ left: anchoDesplazamiento * direccion, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
