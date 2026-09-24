@@ -247,3 +247,12 @@ body {
 
 .carrusel-btn.prev { left: 10px; }
 .carrusel-btn.next { right: 10px; }
+
+/*Efecto zoom interno para tarjetas */
+.img-zoom {
+    transition: transform 0.3s ease;
+}
+
+.img-zoom:hover {
+    transform: scale(1.05);
+}
